@@ -1,0 +1,14 @@
+programa {
+  cadeia nome = "Hygor"
+  inteiro idade = 16
+  cadeia cidade = "Rio Negro"
+  cadeia estado = "PR"
+
+
+  funcao inicio() {
+    escreva("Meu nome é ",nome,"\n")
+    escreva(" tenho ",idade," anos de idade.\n")
+    escreva(" Atualmente resido na cidade de ",cidade," ",estado,")
+    
+  }
+}
