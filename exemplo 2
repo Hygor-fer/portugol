@@ -1,0 +1,41 @@
+programa {
+  cadeia nome = "Hygor"
+  inteiro idade = 16
+  cadeia cidade = "Rio Negro"
+  cadeia estado = "PR"
+  caracter sexo
+
+  funcao inicio() {
+    escreva("Informe seu nome:\n")
+    leia(nome)
+
+    limpa()
+    escreva("Qual sua idade?:\n")
+    leia(idade)
+
+    limpa()
+    escreva("Qual cidade você mora?:\n")
+    leia(cidade)
+
+    limpa()
+    escreva("Qual estado?:\n")
+    leia(estado)
+    
+    limpa()
+    escreva("informe seu sexo[M/F]:\n")
+    
+    escreva("Meu nome é",nome, " tenho" ,idade," anos de idade e atualmente resido na cidade de ",cidade, " " ,estado,")
+
+
+
+
+
+
+
+
+
+
+
+    
+  }
+}
