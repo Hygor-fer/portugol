@@ -1,8 +1,9 @@
 programa {
 
   inclua biblioteca Util
+  inclua biblioteca Texto
 
-     inteiro idade[8], quant = 0, n, opcao
+     inteiro idade[8], quant = 0, n, opcao, achei = 0
      cadeia nome_cliente[8], pesquisa
 
   funcao inicio() 
@@ -17,7 +18,7 @@ programa {
     escreva(" 3 - Buscar clientes cadastrados\n")
     escreva(" 4 - Sair do sistema\n")
 
-     escreva("********************************************\n")
+     escreva("********************************************\n") 
      escreva("Opção desejada: ")
      leia(opcao)
 
@@ -28,6 +29,7 @@ programa {
           limpa()
           escreva("Qual o nome do cliente: ")
           leia(nome_cliente[quant])
+          nome_cliente[quant] = Texto.caixa_alta(nome_cliente[quant]) //converte para caixa alta o nome recebido
          
           limpa()
           escreva("Qual a idade do(a) cliente ", nome_cliente[quant], ":")
@@ -74,9 +76,15 @@ programa {
         {
           se(nome_cliente[n] == pesquisa)
           {
+            achei = 1
             escreva(" Usuário(a) ", nome_cliente[n]," com idade ", idade[n], " encontrado na posição ", n+1,"\n")
           }
       
+        }
+        se(achei == 0)
+        {
+          limpa()
+          escreva("ATENÇÃO: Nenhum usuário encontrado na base de dados!")
         }
         escreva("******************************************************")
 
