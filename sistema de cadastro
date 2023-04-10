@@ -3,7 +3,7 @@ programa {
   inclua biblioteca Util
 
      inteiro idade[8], quant = 0, n, opcao
-     cadeia nome_cliente[8]
+     cadeia nome_cliente[8], pesquisa
 
   funcao inicio() 
   {
@@ -14,7 +14,7 @@ programa {
 
     escreva(" 1 - Cadastrar no cliente\n")
     escreva(" 2 - Visualizar clientes cadastrados\n")
-    escreva(" 3 - Buscar clientes cadastrados")
+    escreva(" 3 - Buscar clientes cadastrados\n")
     escreva(" 4 - Sair do sistema\n")
 
      escreva("********************************************\n")
@@ -66,12 +66,23 @@ programa {
       caso 3
       {
         limpa()
-        escreva("Informe o nome do cliente a ser buscado: ")
-        leia(nome_cliente[quant])
+        escreva("Informe o nome do cliente a ser buscado: \n")
+        leia(pesquisa)
+        limpa()
 
-        se( nome == nome_cliente[n])
-                      
-        pare
+        para (n=0; n < quant; n++)
+        {
+          se(nome_cliente[n] == pesquisa)
+          {
+            escreva(" Usuário(a) ", nome_cliente[n]," com idade ", idade[n], " encontrado na posição ", n+1,"\n")
+          }
+      
+        }
+        escreva("******************************************************")
+
+        Util.aguarde(3000)
+        inicio()
+
       }
 
       caso 4
