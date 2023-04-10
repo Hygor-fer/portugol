@@ -70,6 +70,7 @@ programa {
         limpa()
         escreva("Informe o nome do cliente a ser buscado: \n")
         leia(pesquisa)
+        pesquisa = Texto.caixa_alta(pesquisa) 
         limpa()
 
         para (n=0; n < quant; n++)
@@ -84,9 +85,9 @@ programa {
         se(achei == 0)
         {
           limpa()
-          escreva("ATENÇÃO: Nenhum usuário encontrado na base de dados!")
+          escreva("ATENÇÃO: Nenhum usuário encontrado na base de dados!\n")
         }
-        escreva("******************************************************")
+        escreva("******************************************************\n")
 
         Util.aguarde(3000)
         inicio()
