@@ -1,0 +1,15 @@
+programa {
+
+  inteiro metros, resultado
+
+  funcao inicio() {
+
+    escreva("informe quantos metros a parede que a lesma esta subindo tem: ") 
+    leia(metros)
+
+    resultado = metros * ?????????????????????????
+    escreva("A lesma demorou", resultado,"para chegar ao topo do muro")
+    
+  }
+
+}
