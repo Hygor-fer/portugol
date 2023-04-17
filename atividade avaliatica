@@ -4,11 +4,18 @@ programa {
 
   funcao inicio() {
 
-    escreva("informe quantos metros a parede que a lesma esta subindo tem: ") 
+    escreva("Informe quantos metros a parede que a lesma esta subindo tem: ") 
     leia(metros)
 
-    resultado = metros * ?????????????????????????
-    escreva("A lesma demorou", resultado,"para chegar ao topo do muro")
+    resultado = metros -2 
+    
+    se (metros < 3)
+    {
+      resultado = 1
+    }
+
+
+    escreva("A lesma demorou ", resultado," dias para chegar ao topo do muro")
     
   }
 
